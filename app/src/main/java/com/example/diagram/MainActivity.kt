@@ -17,21 +17,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var entries = arrayListOf(
-            BarEntry(4f,0),
-            BarEntry(8f,1),
-            BarEntry(6f,2),
-            BarEntry(12f,3),
-            BarEntry(18f,4),
-            BarEntry(9f,5),
+            BarEntry(4.78.toFloat(), 0),
+            BarEntry(3.23.toFloat(), 1),
+            BarEntry(3.56.toFloat(), 2),
+            BarEntry(5.0.toFloat(), 3),
+            BarEntry(3.55.toFloat(), 4),
+            BarEntry(4.9.toFloat(), 5),
         )
         val dataSet = BarDataSet(entries,"")
         var labels = arrayListOf(
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June"
+            "Иванов",
+            "Сидоров",
+            "Горнак",
+            "Юшко",
+            "Васильев",
+            "Деребин"
         )
         val chart = BarChart(this)
         setContentView(chart)
